@@ -1,0 +1,179 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="#FFFFFF"
+    tools:context="com.example.tyrotrojan.HomeScreenActivity" >
+
+    <RelativeLayout
+        android:id="@+id/rlImage"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/Ralphsmarketplace" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/destinationTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp"
+                android:layout_weight="1"
+                android:text="@string/shopTitle"
+                android:textColor="#000"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/destinationDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="0dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingRight="2dp"
+                android:paddingTop="5dp"
+                android:text="@string/distance"
+                android:textColor="#000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout1"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:rating="1"
+            android:stepSize="0.1" />
+
+      
+
+     
+
+    </RelativeLayout>
+
+       <TextView
+        android:id="@+id/InfoHeading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="2.41"
+       android:textColor="@color/neongreen"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="INFO"
+        android:textSize="18sp" />
+       
+         <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="horizontal" >
+       
+       
+        
+
+        <TextView
+            android:id="@+id/HoursToday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                       
+        android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="Hours Today : 7AM - 2AM"
+            android:textColor="#000"
+            android:textSize="16sp" />
+        
+        
+          <TextView
+            android:id="@+id/Open"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            
+            android:layout_gravity="right"
+            android:layout_weight="1"         
+            android:layout_marginRight="5dp"
+            android:text="Open"
+            android:textColor="@color/neongreen"
+            android:textSize="16sp" />
+        </LinearLayout>
+    <TextView
+        android:id="@+id/PlaceInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="2.41"
+        android:clickable="true"
+        android:padding="10dp"
+        android:onClick="expandInfo"
+        android:text="@string/Info"
+        android:textColor="#000"
+        android:textSize="16sp" />
+
+    
+
+    <TextView
+        android:id="@+id/directionsButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:padding="10dp"
+           android:clickable="true"
+           android:textColor="@color/grey"
+           android:onClick="getDirections"
+        android:background="@drawable/back"
+        android:drawableLeft="@drawable/location"
+        android:drawablePadding="5dp"
+        android:text="Directions" />
+
+    <TextView
+        android:id="@+id/callButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+         android:padding="10dp"
+            android:clickable="true"
+        android:background="@drawable/back"
+        android:drawableLeft="@drawable/phone1"
+        android:drawablePadding="5dp"
+         android:textColor="@color/grey"
+          android:onClick="getCalls"
+        android:text="Call" />
+
+    <TextView
+        android:id="@+id/dealsButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+         android:padding="10dp"
+          android:clickable="true"
+           android:textColor="@color/grey"
+           android:drawableLeft="@drawable/deals"
+        android:drawablePadding="5dp"
+         android:onClick="getDeals"
+           
+         
+        android:background="@drawable/back"
+        android:text="Today&apos;s Deals" />
+
+</LinearLayout>
+<!--  currently hard coded values for string titles and background images needs to come from code  -->

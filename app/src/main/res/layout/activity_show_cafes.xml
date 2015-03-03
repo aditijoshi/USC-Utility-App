@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/layout"
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal|vertical"
+        android:layout_width="match_parent"
+        android:scrollbarStyle="outsideInset"
+        android:fillViewport="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#303030"
+            android:shrinkColumns="*"
+            android:stretchColumns="*" >
+
+            <!-- Row 1 with 2 columns -->
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF" >
+
+                <ImageView
+                    android:id="@+id/imageButton1"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.1"
+                    android:adjustViewBounds="true"
+                    android:clickable="true"
+                    android:onClick="call_ralphs"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/moreton" />
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.9" >
+
+                    <TableRow
+                        android:id="@+id/title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E0E0E0"
+                        >
+                        <TextView
+                            android:text="1. Moreton Fig"
+                            android:textSize="15sp"
+                            /></TableRow>
+
+                    <TableRow
+                        android:id="@+id/desc1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:text="Conveniently located in the center of campus in the Ronald Tutor Campus Center..."
+                            android:textSize="12sp"
+                            android:maxLines="3"
+                            />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/hours1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <TextView
+                            android:text="Hours: 10:00am - 1:00am"
+                            android:textSize="12sp"
+                            />
+                    </TableRow>
+
+                </TableLayout></TableRow>
+
+            <!-- Row 2 with 2 columns -->
+
+            <TableRow
+                android:id="@+id/TableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF" >
+
+                <ImageView
+                    android:id="@+id/fresh"
+                    android:layout_height="20dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:adjustViewBounds="false"
+                android:clickable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/thelab" />
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3" >
+
+                    <TableRow
+                        android:id="@+id/title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E0E0E0" >
+
+                        <TextView
+                            android:text="2. The Lab GastroPub"
+                            android:textSize="15sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/desc2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:text=" Located on Figueroa Blvd. across from USC, The Lab is the perfect..."
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/hours2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:text="Hours: 10:00am - 11:00pm"
+                            android:textSize="12sp" />
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+
+
+
+
+            <!-- Row 3 with 2 columns -->
+
+            <TableRow
+                android:id="@+id/TableRow33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF" >
+
+                <ImageView
+                    android:id="@+id/walmart"
+                    android:layout_height="80dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:adjustViewBounds="true"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/thecafe" />
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3" >
+
+                    <TableRow
+                        android:id="@+id/title3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E0E0E0" >
+
+                        <TextView
+                            android:text="3. Walmart"
+                            android:textSize="15sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/desc3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:text="Store for all your daily needs"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/hours3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:text="Hours: 10:00am - 1:00am"
+                            android:textSize="12sp" />
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+
+            <!-- Row 4 with 2 columns -->
+
+            <TableRow
+                android:id="@+id/TableRow4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:background="#FFFFFF" >
+
+                <ImageView
+                    android:id="@+id/manas"
+                    android:layout_height="80dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:adjustViewBounds="true"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/rc_retail_law" />
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4" >
+
+                    <TableRow
+                        android:id="@+id/title4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E0E0E0" >
+
+                        <TextView
+                            android:text="4. Manas Indian Cuisine"
+                            android:textSize="15sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/hours4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:text="Hours: 10:00am - 10:00pm"
+                            android:textSize="12sp" />
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+
+
+            <!-- Row 5 with 2 columns -->
+
+            <TableRow
+                android:id="@+id/TableRow5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="#FFFFFF" >
+
+                <ImageView
+                    android:id="@+id/lees"
+                    android:layout_height="80dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:adjustViewBounds="true"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/rc_retail_shop" />
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4" >
+
+                    <TableRow
+                        android:id="@+id/title5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E0E0E0" >
+
+                        <TextView
+                            android:text="5. Lee's"
+                            android:textSize="15sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/desc5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:text="Store for all your grocery needs"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/hours5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:text="Hours: 10:00am - 11:00pm"
+                            android:textSize="12sp" />
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+
+            <!-- Row 6 with 2 columns -->
+
+            <TableRow
+                android:id="@+id/TableRow6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:background="#FFFFFF" >
+
+                <ImageView
+                    android:id="@+id/target"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="0.6"
+                    android:adjustViewBounds="true"
+                    android:clickable="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/rc_retail_popovich" />
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4" >
+
+                    <TableRow
+                        android:id="@+id/title6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#E0E0E0" >
+
+                        <TextView
+                            android:text="6. Target"
+                            android:textSize="15sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/desc6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:text="Store for all your grocery needs"
+                            android:textSize="12sp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:id="@+id/hours6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:text="Hours: 10:00am - 11:00pm"
+                            android:textSize="12sp" />
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+        </TableLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+    <TableRow
+        android:id="@+id/desc4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:text="Store for all your daily needs"
+            android:textSize="12sp" />
+    </TableRow>
+
+</LinearLayout>
